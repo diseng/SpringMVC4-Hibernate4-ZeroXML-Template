@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11'
+    compile 'org.springframework:spring-context:4.0.3.RELEASE'
+    compile 'org.springframework:spring-webmvc:4.0.3.RELEASE'
+    compile 'org.springframework:spring-orm:4.0.3.RELEASE'
+    compile 'org.hibernate:hibernate-core:4.3.5.Final'
+    compile 'org.hibernate:hibernate-c3p0:4.3.5.Final'
+    compile 'mysql:mysql-connector-java:5.1.30'
+    compile 'javax.servlet:jstl:1.2'
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+}
